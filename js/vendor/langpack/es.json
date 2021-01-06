@@ -1,0 +1,55 @@
+{
+  "token": {
+    "Cold sores": "Fuego labial",
+    "Symptoms": "Síntomas",
+    "Causes": "Causas",
+    "Prevention": "Prevención",
+    "Discover Cicloferon": "Descubre Cicloferon",
+    "Where to buy": "¿Dónde comprar?",
+    "What are cold sores?": "¿Qué es el fuego labial?",
+
+    
+    "parra_1": "El fuego labial –o herpes labial– es una infección que se manifiesta por la erupción de pequeñas ampollas que se forman principalmente alrededor de los labios.",
+    "parra_2": "Por lo general son causadas por el virus del herpes simple tipo 1 (HSV-1). Es importante recordar que los fuegos labiales son muy comunes, se esparcen fácilmente, pero usualmente no son motivo de pánico.",
+    "enca_1": "¿Cuáles son los síntomas?",
+    "boca_1": "Brote de pequeñas ampollas llenas de líquido",
+    "boca_2": "Una molesta sensación de picor, ardor u hormigueo en o alrededor de los labios",
+
+
+    "Blisters that ooze fluid and then crust over": "Ampollas que supuran líquido y luego cicatrizan",
+    "WHAT CAUSES COLD SORES?": "¿Qué causa un fuego labial?",
+    "Fever": "Fiebre",
+    "Stress": "Estrés",
+    "Viral infections": "Infecciones virales",
+    "Weakened Immune system": "Un sistema inmune debilitado",
+    "Fatigue": "Fatiga",
+    "Hormonal changes": "Cambios hormonales",
+    "Dry and cold weather": "Clima frío y seco",
+    "Excessive sun exposure": "Excesiva exposición al sol ",
+    "It’s very common! 46% of adults worldwide have a history of cold sores": "¡Es muy común! El 46% de los adultos de todo el mundo tiene una historia con los fuegos labiales",
+    "What can I do to prevent them?": "¿Qué puedo hacer para prevenirlo? ",
+    "Avoid kissing others, as it can spread easily through body fluids and close contact": "Procura no besar a otros, pues se contagia fácilmente a través de fluidos corporales y contacto cercano",
+    "Avoid sharing drinks, utensils, or cups with others, especially people you don’t know": "No compartas bebidas, cubiertos, vasos o tazas con otros, sobre todo con gente que no conoces",
+    "Practice some stress-reducing habits, such as getting regular exercise and enough sleep": "Adopta rutinas que reducen el estrés, como el ejercicio frecuente o dormir lo necesario",
+    "Protect your lips from the sun by wearing hats or sunscreen": "Protege tus labios del sol con sombreros o protector solar",
+    "Boost your immune system by eating well-balanced meals and minimizing alcohol & caffeine in your diet": "Fortalece tu sistema inmune con una alimentación balanceada y reduciendo tu consumo de alcohol y cafeína",
+    "If you do start feeling a tingling on your lips,": "Si comienzas a sentir un hormigueo en tus labios,",
+
+    "Use Cicloferon for fast-acting relief": "Usa Cicloferon para un rápido alivio",
+    "How does Cicloferon work?": "¿Cómo actúa Cicloferon?",
+    "Cicloferon’s active ingredients work together to provide:": "Los ingredients activos de Cicloferon trabajan de la mano para proveer:",
+    "Fast pain relief": "Alivio rápido al dolor",
+    "Fast itching, burning, and tingling relief": "Rápido alivio de las sensaciones de picor, ardor y hormigueo",
+    "Clinically proven reduced spreading": "Clínicamente probado que reduce el contagio",
+    "Invisible and odorless treatment": "Tratamiento invisible y sin olor",
+    "Where to buy Cicloferon:": "¿Dónde comprar Cicloferon?",
+    "Or use our store locator:": "O usa tu localizador de tiendas",
+    "Enter your zip code": "Ingresa tu código postal",
+    "Privacy Policy": "Politica de privacidas",
+    "Legal Statement": "Información legal",
+
+    "img/cicloferon_hero.jpg": "img/cicloferon_hero_es.jpg",
+    "img/cicloferon_hero_cel.jpg": "img/cicloferon_hero_cel_es.jpg"
+  },
+  "regex": [["This will be case insensitive", "i", ""]]
+}
