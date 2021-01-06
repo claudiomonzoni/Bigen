@@ -5,6 +5,7 @@
 
 $naranja: #e39950;
 $verde: #bfcf30;
+$verdeOscuro:#7C8708;
 $gris: #e6e6e6;
 
 //reset
@@ -271,7 +272,6 @@ button {
   align-items: center;
   @include cel {
     flex-direction: column;
-    
   }
   ul {
     display: inherit;
@@ -298,11 +298,10 @@ button {
       width: 150px;
       height: auto;
     }
-    @include cel{
+    @include cel {
       padding-left: 0.6em;
       align-self: flex-start;
     }
-  
   }
   .anchor {
     flex: 1 1 auto;
@@ -463,17 +462,16 @@ button {
     .anchor {
       justify-self: center;
       li {
-        
         border-right: none;
         padding: 1em 0;
       }
-      li:nth-child(1n + 0 ){
+      li:nth-child(1n + 0) {
         border-bottom: solid 1px $naranja;
       }
-      li:nth-child(2n + 0 ){
+      li:nth-child(2n + 0) {
         border-bottom: solid 1px $verde;
       }
-      li:nth-child(3n + 0 ){
+      li:nth-child(3n + 0) {
         border-bottom: solid 1px #000;
       }
     }
@@ -530,9 +528,7 @@ button {
       text-align: left;
       img {
         max-width: 100px;
-        @include cel{
-          padding-top: 3em;
-        }
+        padding-top: 3em;
       }
     }
     ul {
@@ -701,8 +697,8 @@ button {
   @include hd {
     background-size: 35%;
   }
-  @include cel{
-    background-position: -160% 50% ;
+  @include cel {
+    background-position: -160% 50%;
     background-size: 80%;
   }
   h1,
@@ -800,63 +796,253 @@ button {
   }
 }
 #blogHome {
- 
   background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 70%,
     rgba(210, 221, 114, 1) 100%
   );
-  .bandeja{
+  .bandeja {
     @extend .elconte;
   }
-  .post{
+  .post {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 0.5em;
     //opacity: 0.5;
-    img, h3, p{
+    img,
+    h3,
+    p {
       flex-basis: 100%;
     }
-    img{
+    img {
       width: 100%;
       height: 22vh;
       object-fit: cover;
       padding-bottom: 1em;
-      @include cel{
+      @include cel {
         height: 33vh;
       }
     }
-    h3{
+    h3 {
       font-size: 1.8em;
       text-align: center;
       padding: 0 1em;
     }
-    p{
+    p {
       padding: 0 1em 1em;
     }
   }
-  h1, p {
+  h1,
+  p {
     margin-bottom: 0.5em;
     grid-column: 2 / span 1;
     text-align: center;
   }
-  .slideHome{
+  .slideHome {
     grid-column: 2 / -1;
     padding: 2em 0;
-    @include cel{
+    @include cel {
       grid-column: 2;
     }
   }
-  #control{
+  #control {
     grid-column: 2 / span 1;
     display: flex;
     padding: 2em 0;
     justify-content: center;
-    img{
-      margin:0 3em;
+    img {
+      margin: 0 3em;
     }
+  }
+}
+
+// seccion descubre
+
+#descubre {
+  @extend .elconte;
+  background: url(/img/descubre_geisha.jpg) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  @include cel {
+    background-size: 140%;
+    background-position: 25% 25%;
+  }
+  h1,
+  p,
+  img {
+    margin-bottom: 0.5em;
+    grid-column: 2;
+  }
+  p {
+    padding: 0 20%;
+    @include cel {
+      padding: 0 10%;
+    }
+    text-align: center;
+  }
+  img,
+  p:last-child {
+    padding-top: 2em;
+    justify-self: center;
+  }
+}
+#marcaHoyu {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background: url(/img/descubre_bg_historia.jpg) no-repeat #f2f2f2;
+  background-position: left bottom;
+  background-size: 60%;
+  @include cel {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  #izq {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    @include cel {
+      order: 2;
+    }
+    .bandeja {
+      padding: 5em;
+      display: flex;
+      flex-direction: column;
+      @include cel {
+        padding: 2em;
+      }
+      @include hd {
+        width: 70%;
+      }
+      p {
+        padding: 0.5em 0;
+      }
+      img {
+        padding-bottom: 1em;
+        align-self: center;
+      }
+    }
+  }
+  img:last-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include cel {
+      order: 1;
+    }
+  }
+}
+
+#tevesbien {
+  background-color: $naranja;
+  display: flex;
+  flex-wrap: wrap;
+  h2 {
+    font-size: 2.5em;
+  }
+  #izq {
+    flex: 1 1 auto;
+    color: #fff;
+    background: url(/img/descubre_bg_creemos.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 25%;
+    text-align: right;
+    padding: 2em;
+    @include cel {
+      text-align: center;
+      flex-basis: 100%;
+    }
+  }
+  #der {
+    flex: 1 1 auto;
+    padding: 2em;
+    align-self: center;
+  }
+}
+#compromiso {
+  background: url(/img/descubre_bigen_bg_final.jpg) no-repeat;
+  background-size: 40%;
+  background-position: left 110%;
+  .bandeja {
+    @extend .elconte;
+    h1 {
+      margin-bottom: 0.5em;
+      grid-column: 2;
+    }
+    p {
+      text-align: center;
+      grid-column: 2 / span 1;
+      margin-bottom: 3em;
+      padding: 0 10%;
+    }
+    a {
+      grid-column: 2;
+      justify-self: center;
+      margin: 2.5em 0.5em;
+    }
+
+    #tarjetas {
+      grid-column: 2;
+      .tar {
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        @include cel{
+          flex-wrap: wrap;
+        }
+
+        img {
+          width: 45%;
+          @include cel{
+            width: 100%;
+          }
+        }
+        .recuadro {
+          background-color: #000;
+          color: #fff;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 3em 10%;
+
+    
+          h3 {
+            flex-basis: 100%;
+            font-size: 1.5em;
+            align-self: center;
+
+            
+          }
+          p {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+          }
+
+        
+      }
+    }
+      .tar:nth-child(2) {
+        img {
+          order: 2;
+          @include cel{
+            order: 0;
+          }
+        }
+        .recuadro{
+          background-color: $verdeOscuro;
+       }
+      }
+      .tar:nth-child(3) {
+        .recuadro{
+          background-color: $naranja;
+       }
+      }
+    }
+
   }
 }
 input {

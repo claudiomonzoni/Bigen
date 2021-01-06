@@ -103,7 +103,7 @@ p {
       grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
 }
 
-.elconte, #blogHome .bandeja {
+.elconte, #blogHome .bandeja, #descubre, #compromiso .bandeja {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10% 1fr 10%;
@@ -116,7 +116,7 @@ p {
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
-  .elconte, #blogHome .bandeja {
+  .elconte, #blogHome .bandeja, #descubre, #compromiso .bandeja {
     grid-column: 1 / -1;
   }
 }
@@ -673,12 +673,7 @@ button {
 
 #footer .bandeja .col:last-child img {
   max-width: 100px;
-}
-
-@media (max-width: 479px) {
-  #footer .bandeja .col:last-child img {
-    padding-top: 3em;
-  }
+  padding-top: 3em;
 }
 
 #footer .bandeja ul {
@@ -936,7 +931,7 @@ button {
   margin-bottom: 0.5em;
 }
 
-#conoceBigenHome .elconte .bandeja, #conoceBigenHome #blogHome .bandeja .bandeja, #blogHome #conoceBigenHome .bandeja .bandeja {
+#conoceBigenHome .elconte .bandeja, #conoceBigenHome #blogHome .bandeja .bandeja, #blogHome #conoceBigenHome .bandeja .bandeja, #conoceBigenHome #descubre .bandeja, #conoceBigenHome #compromiso .bandeja .bandeja, #compromiso #conoceBigenHome .bandeja .bandeja {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -947,7 +942,7 @@ button {
           justify-content: space-evenly;
 }
 
-#conoceBigenHome .elconte .productoConoce, #conoceBigenHome #blogHome .bandeja .productoConoce, #blogHome #conoceBigenHome .bandeja .productoConoce {
+#conoceBigenHome .elconte .productoConoce, #conoceBigenHome #blogHome .bandeja .productoConoce, #blogHome #conoceBigenHome .bandeja .productoConoce, #conoceBigenHome #descubre .productoConoce, #conoceBigenHome #compromiso .bandeja .productoConoce, #compromiso #conoceBigenHome .bandeja .productoConoce {
   margin-top: 5em;
   text-align: center;
   display: -webkit-box;
@@ -962,12 +957,12 @@ button {
           align-items: center;
 }
 
-#conoceBigenHome .elconte .productoConoce h2, #conoceBigenHome #blogHome .bandeja .productoConoce h2, #blogHome #conoceBigenHome .bandeja .productoConoce h2 {
+#conoceBigenHome .elconte .productoConoce h2, #conoceBigenHome #blogHome .bandeja .productoConoce h2, #blogHome #conoceBigenHome .bandeja .productoConoce h2, #conoceBigenHome #descubre .productoConoce h2, #conoceBigenHome #compromiso .bandeja .productoConoce h2, #compromiso #conoceBigenHome .bandeja .productoConoce h2 {
   font-size: 2em;
   padding: 0.6em 0;
 }
 
-#conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo {
+#conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #descubre .productoConocepolvo, #conoceBigenHome #compromiso .bandeja .productoConocepolvo, #compromiso #conoceBigenHome .bandeja .productoConocepolvo {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr;
@@ -976,13 +971,13 @@ button {
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
-  #conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo {
+  #conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #descubre .productoConocepolvo, #conoceBigenHome #compromiso .bandeja .productoConocepolvo, #compromiso #conoceBigenHome .bandeja .productoConocepolvo {
     margin: 5em 0%;
   }
 }
 
 @media (max-width: 479px) {
-  #conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo {
+  #conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #descubre .productoConocepolvo, #conoceBigenHome #compromiso .bandeja .productoConocepolvo, #compromiso #conoceBigenHome .bandeja .productoConocepolvo {
     margin: 5em 0%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -991,12 +986,12 @@ button {
   }
 }
 
-#conoceBigenHome .elconte .productoConocepolvo .bandejaA, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandejaA, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandejaA {
+#conoceBigenHome .elconte .productoConocepolvo .bandejaA, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandejaA, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandejaA, #conoceBigenHome #descubre .productoConocepolvo .bandejaA, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandejaA, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandejaA {
   text-align: center;
   margin: 0 2em;
 }
 
-#conoceBigenHome .elconte .productoConocepolvo .bandeja, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja {
+#conoceBigenHome .elconte .productoConocepolvo .bandeja, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #descubre .productoConocepolvo .bandeja, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1010,14 +1005,14 @@ button {
 }
 
 @media (max-width: 479px) {
-  #conoceBigenHome .elconte .productoConocepolvo .bandeja, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja {
+  #conoceBigenHome .elconte .productoConocepolvo .bandeja, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #descubre .productoConocepolvo .bandeja, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja {
     text-align: center;
   }
-  #conoceBigenHome .elconte .productoConocepolvo .bandeja p, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja p, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja p {
+  #conoceBigenHome .elconte .productoConocepolvo .bandeja p, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja p, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #descubre .productoConocepolvo .bandeja p, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja p, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja p {
     text-align: center !important;
     margin: 1em 0;
   }
-  #conoceBigenHome .elconte .productoConocepolvo .bandeja a, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja a, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja a {
+  #conoceBigenHome .elconte .productoConocepolvo .bandeja a, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja a, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja a, #conoceBigenHome #descubre .productoConocepolvo .bandeja a, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja a, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja a {
     position: relative;
     transform: translateX(-50%);
     left: 50%;
@@ -1026,11 +1021,11 @@ button {
   }
 }
 
-#conoceBigenHome .elconte .productoConocepolvo .bandeja h2, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja h2, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2 {
+#conoceBigenHome .elconte .productoConocepolvo .bandeja h2, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja h2, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2, #conoceBigenHome #descubre .productoConocepolvo .bandeja h2, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja h2, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2 {
   font-size: 2em;
 }
 
-#conoceBigenHome .elconte .productoConocepolvo .bandeja p, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja p, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja p {
+#conoceBigenHome .elconte .productoConocepolvo .bandeja p, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja p, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #descubre .productoConocepolvo .bandeja p, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja p, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja p {
   text-align: left;
   margin: 1em 0;
 }
@@ -1092,7 +1087,9 @@ button {
   padding: 0 0.5em;
 }
 
-#blogHome .post img, #blogHome .post h3, #blogHome .post p {
+#blogHome .post img,
+#blogHome .post h3,
+#blogHome .post p {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -1121,7 +1118,8 @@ button {
   padding: 0 1em 1em;
 }
 
-#blogHome h1, #blogHome p {
+#blogHome h1,
+#blogHome p {
   margin-bottom: 0.5em;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1156,6 +1154,288 @@ button {
 
 #blogHome #control img {
   margin: 0 3em;
+}
+
+#descubre {
+  background: url(/img/descubre_geisha.jpg) no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+@media (max-width: 479px) {
+  #descubre {
+    background-size: 140%;
+    background-position: 25% 25%;
+  }
+}
+
+#descubre h1,
+#descubre p,
+#descubre img {
+  margin-bottom: 0.5em;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+#descubre p {
+  padding: 0 20%;
+  text-align: center;
+}
+
+@media (max-width: 479px) {
+  #descubre p {
+    padding: 0 10%;
+  }
+}
+
+#descubre img,
+#descubre p:last-child {
+  padding-top: 2em;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#marcaHoyu {
+  margin-top: 5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+  background: url(/img/descubre_bg_historia.jpg) no-repeat #f2f2f2;
+  background-position: left bottom;
+  background-size: 60%;
+}
+
+@media (max-width: 479px) {
+  #marcaHoyu {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+#marcaHoyu h1 {
+  margin-bottom: 0.5em;
+}
+
+#marcaHoyu #izq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 479px) {
+  #marcaHoyu #izq {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+#marcaHoyu #izq .bandeja {
+  padding: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 479px) {
+  #marcaHoyu #izq .bandeja {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 1600px) {
+  #marcaHoyu #izq .bandeja {
+    width: 70%;
+  }
+}
+
+#marcaHoyu #izq .bandeja p {
+  padding: 0.5em 0;
+}
+
+#marcaHoyu #izq .bandeja img {
+  padding-bottom: 1em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#marcaHoyu img:last-child {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 479px) {
+  #marcaHoyu img:last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+#tevesbien {
+  background-color: #e39950;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#tevesbien h2 {
+  font-size: 2.5em;
+}
+
+#tevesbien #izq {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  color: #fff;
+  background: url(/img/descubre_bg_creemos.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 25%;
+  text-align: right;
+  padding: 2em;
+}
+
+@media (max-width: 479px) {
+  #tevesbien #izq {
+    text-align: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+#tevesbien #der {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 2em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#compromiso {
+  background: url(/img/descubre_bigen_bg_final.jpg) no-repeat;
+  background-size: 40%;
+  background-position: left 110%;
+}
+
+#compromiso .bandeja h1 {
+  margin-bottom: 0.5em;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+#compromiso .bandeja p {
+  text-align: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  margin-bottom: 3em;
+  padding: 0 10%;
+}
+
+#compromiso .bandeja a {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 2.5em 0.5em;
+}
+
+#compromiso .bandeja #tarjetas {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+#compromiso .bandeja #tarjetas .tar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+@media (max-width: 479px) {
+  #compromiso .bandeja #tarjetas .tar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+#compromiso .bandeja #tarjetas .tar img {
+  width: 45%;
+}
+
+@media (max-width: 479px) {
+  #compromiso .bandeja #tarjetas .tar img {
+    width: 100%;
+  }
+}
+
+#compromiso .bandeja #tarjetas .tar .recuadro {
+  background-color: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3em 10%;
+}
+
+#compromiso .bandeja #tarjetas .tar .recuadro h3 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 1.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#compromiso .bandeja #tarjetas .tar .recuadro p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+#compromiso .bandeja #tarjetas .tar:nth-child(2) img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (max-width: 479px) {
+  #compromiso .bandeja #tarjetas .tar:nth-child(2) img {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+#compromiso .bandeja #tarjetas .tar:nth-child(2) .recuadro {
+  background-color: #7C8708;
+}
+
+#compromiso .bandeja #tarjetas .tar:nth-child(3) .recuadro {
+  background-color: #e39950;
 }
 
 input {
