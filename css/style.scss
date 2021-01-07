@@ -892,11 +892,12 @@ button {
   margin-top: 5em;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  background: url(/img/descubre_bg_historia.jpg) no-repeat #f2f2f2;
+  background: url(./img/descubre_bg_historia.jpg) no-repeat #f2f2f2;
   background-position: left bottom;
   background-size: 60%;
   @include cel {
     grid-template-columns: 1fr;
+    background-size: 100%;
   }
   h1 {
     margin-bottom: 0.5em;
@@ -927,12 +928,13 @@ button {
       }
     }
   }
-  img:last-child {
+  #castillo {
     width: 100%;
     height: 100%;
     object-fit: cover;
     @include cel {
       order: 1;
+      object-fit: contain
     }
   }
 }
@@ -947,7 +949,7 @@ button {
   #izq {
     flex: 1 1 auto;
     color: #fff;
-    background: url(/img/descubre_bg_creemos.jpg) no-repeat;
+    background: url(./img/descubre_bg_creemos.jpg) no-repeat;
     background-size: cover;
     background-position: 0 25%;
     text-align: right;
