@@ -121,6 +121,13 @@ p {
   }
 }
 
+.degraSup {
+  height: 30px;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(lightgray), color-stop(30%, white));
+  background: linear-gradient(180deg, lightgray 0%, white 30%);
+}
+
 .btn {
   display: block;
   width: -webkit-fit-content;
@@ -1215,16 +1222,16 @@ button {
 }
 
 #marcaHoyu h1 {
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
 }
 
 #marcaHoyu #izq {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1284,8 +1291,8 @@ button {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    -o-object-fit: contain;
-       object-fit: contain;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1434,7 +1441,7 @@ button {
 }
 
 #compromiso .bandeja #tarjetas .tar:nth-child(2) .recuadro {
-  background-color: #7C8708;
+  background-color: #7c8708;
 }
 
 #compromiso .bandeja #tarjetas .tar:nth-child(3) .recuadro {

@@ -5,7 +5,7 @@
 
 $naranja: #e39950;
 $verde: #bfcf30;
-$verdeOscuro:#7C8708;
+$verdeOscuro: #7c8708;
 $gris: #e6e6e6;
 
 //reset
@@ -152,6 +152,15 @@ $hd: 1600px;
   }
 }
 
+.degraSup {
+  height: 30px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgb(211, 211, 211) 0%,
+    rgba(255, 255, 255, 1) 30%
+  );
+}
 .btn {
   display: block;
   width: fit-content;
@@ -900,11 +909,11 @@ button {
     background-size: 100%;
   }
   h1 {
-    margin-bottom: 0.5em;
+    margin: 0.5em 0;
   }
   #izq {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     @include cel {
       order: 2;
@@ -934,7 +943,8 @@ button {
     object-fit: cover;
     @include cel {
       order: 1;
-      object-fit: contain
+      width: 100%;
+      height: auto;
     }
   }
 }
@@ -993,13 +1003,13 @@ button {
         display: flex;
         align-items: center;
         padding: 1em;
-        @include cel{
+        @include cel {
           flex-wrap: wrap;
         }
 
         img {
           width: 45%;
-          @include cel{
+          @include cel {
             width: 100%;
           }
         }
@@ -1010,41 +1020,35 @@ button {
           flex-wrap: wrap;
           padding: 3em 10%;
 
-    
           h3 {
             flex-basis: 100%;
             font-size: 1.5em;
             align-self: center;
-
-            
           }
           p {
             text-align: left;
             padding: 0;
             margin: 0;
           }
-
-        
+        }
       }
-    }
       .tar:nth-child(2) {
         img {
           order: 2;
-          @include cel{
+          @include cel {
             order: 0;
           }
         }
-        .recuadro{
+        .recuadro {
           background-color: $verdeOscuro;
-       }
+        }
       }
       .tar:nth-child(3) {
-        .recuadro{
+        .recuadro {
           background-color: $naranja;
-       }
+        }
       }
     }
-
   }
 }
 input {
