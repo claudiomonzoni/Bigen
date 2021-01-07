@@ -902,7 +902,7 @@ button {
 }
 
 #conoceBigenHome {
-  background: url(/img/fondo_home_bigen_b.jpg) no-repeat;
+  background: url(../img/fondo_home_bigen_b.jpg) no-repeat;
   background-position: 0 0;
   background-size: 40%;
 }
@@ -1157,7 +1157,7 @@ button {
 }
 
 #descubre {
-  background: url(/img/descubre_geisha.jpg) no-repeat;
+  background: url(../img/descubre_geisha.jpg) no-repeat;
   background-size: contain;
   background-position: center center;
 }
@@ -1201,7 +1201,7 @@ button {
   display: grid;
   -ms-grid-columns: 1.5fr 1fr;
       grid-template-columns: 1.5fr 1fr;
-  background: url(./img/descubre_bg_historia.jpg) no-repeat #f2f2f2;
+  background: url(../img/descubre_bg_historia.jpg) no-repeat #f2f2f2;
   background-position: left bottom;
   background-size: 60%;
 }
@@ -1307,7 +1307,7 @@ button {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   color: #fff;
-  background: url(./img/descubre_bg_creemos.jpg) no-repeat;
+  background: url(../img/descubre_bg_creemos.jpg) no-repeat;
   background-size: cover;
   background-position: 0 25%;
   text-align: right;
@@ -1333,7 +1333,7 @@ button {
 }
 
 #compromiso {
-  background: url(/img/descubre_bigen_bg_final.jpg) no-repeat;
+  background: url(../img/descubre_bigen_bg_final.jpg) no-repeat;
   background-size: 40%;
   background-position: left 110%;
 }
