@@ -7,6 +7,8 @@ $naranja: #e39950;
 $verde: #bfcf30;
 $verdeOscuro: #7c8708;
 $gris: #e6e6e6;
+$rosa: #f59176;
+$azul: #2d3756;
 
 //reset
 html {
@@ -345,7 +347,7 @@ button {
       display: flex;
       align-items: center;
       padding: 0 1em;
-      flex: 1;
+      flex: 1 0 40%;
       span {
         background-color: $verde;
         padding-left: 40%;
@@ -354,6 +356,9 @@ button {
     }
     li:first-child span {
       background-color: $naranja;
+    }
+    li:last-child span {
+      background-color: $rosa;
     }
     img {
       position: absolute;
@@ -367,9 +372,19 @@ button {
       padding: 0.7em 1em;
     }
   }
-
+  .cerrarCel {
+    display: none;
+  }
   //celular
   @include cel {
+    .cerrarCel {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
     position: absolute;
     z-index: 1000;
     top: 0px;
@@ -379,6 +394,8 @@ button {
       padding: 0 20%;
       li {
         margin: 2.5em 0;
+        flex: 1 0 50%;
+        padding: 0;
       }
       img {
         width: 150px;
@@ -1051,6 +1068,245 @@ button {
     }
   }
 }
+
+//productos bigen polvo
+
+#bigenProductos {
+  @extend .elconte;
+
+  .bandeja {
+    grid-column: 2;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  #polvo {
+    width: 300px;
+  }
+  #slidePro {
+    grid-column: 2;
+    margin: 3em 0 2em;
+    .producto {
+      text-align: center;
+      justify-self: center;
+    }
+  }
+  #control {
+    grid-column: 2;
+    justify-self: center;
+  }
+  #kit {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3em 0;
+    justify-content: center;
+    h2 {
+      flex-basis: 100%;
+      font-size: 2em;
+      padding-bottom: 1em;
+    }
+    .conte {
+      display: flex;
+      align-items: center;
+
+      @include cel {
+        flex-wrap: wrap;
+        img {
+          flex: 1 1 100%;
+          padding: 2em;
+        }
+      }
+
+      ul {
+        text-align: left;
+        margin: 0 3em;
+        li::before {
+          content: "\2022";
+          color: $naranja;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+  #caracteristicas {
+    h2 {
+      font-size: 3em;
+    }
+    #circulos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      .circulo {
+        flex: 1 1 33%;
+        padding: 2em;
+        margin: 2em 0;
+        @include cel {
+          padding: 1em;
+          margin: 0.5em 0;
+          flex: 0 2 50%;
+        }
+      }
+    }
+  }
+  background: url(../img/bp/bigen_polvo_fondo_modelo.jpg) no-repeat;
+  background-position: left bottom;
+  background-size: 30%;
+
+  @include cel {
+    background-size: 50%;
+  }
+}
+
+///mixin de cada paso
+@mixin paso($colorFondo, $colorSpan, $colorHeader) {
+  display: flex;
+  flex: 1 0 50%;
+  padding: 1em;
+
+  .conteIma {
+    display: flex;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 50%,
+      $colorFondo 50%
+    );
+    img {
+      align-self: center;
+      @include cel {
+        width: 100px;
+      }
+    }
+  }
+  .conte {
+    background-color: $colorFondo;
+    padding: 2em;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 15vw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    h2 {
+      flex-basis: 100%;
+      color: $colorHeader;
+      font-size: 2em;
+      @include cel {
+        font-size: 1.5em;
+      }
+    }
+    span {
+      font-size: 1em !important;
+      color: $colorSpan;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    p {
+      color: $colorHeader;
+    }
+  }
+}
+@mixin barra($colorFondo, $colorLetras) {
+  grid-column: 1/-1;
+  background-color: $colorFondo;
+  text-align: center;
+  h2 {
+    color: $colorLetras;
+    font-size: 2em;
+    padding: 2em 0 4em;
+    @include cel {
+      font-size: 1.7em;
+    }
+  }
+}
+@mixin fondo($rutaIma, $tamano, $posY) {
+  background: url($rutaIma) no-repeat;
+  background-size: $tamano;
+  background-position: right $posY;
+}
+#aplicacion {
+  .bandeja {
+    grid-column: 2;
+    @extend .elconte;
+  }
+
+  #barra {
+    @include barra($azul, #fff);
+  }
+  #pasos {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateY(-100px);
+    .paso {
+      @include paso($rosa, #000, #fff);
+    }
+  }
+  @include fondo("../img/bp/bigen_polvo_fondo_modelo2.jpg", 60%, 80%)
+}
+#pasoapaso{
+  @extend .elconte;
+  padding: 0 15% 3em;
+  @include cel{
+    padding: 0 0% 3em;
+  }
+  .bandeja{
+    grid-column: 2;
+    text-align: center;
+    h2{
+      font-size: 2em;
+      padding: 1em 0 0.5em;
+    }
+    p{
+      padding:1em 0;
+    }
+    ul{
+      li{
+        text-align: left;
+        position: relative;
+        padding: 1em 0 1em 2em;
+        span{
+          position: absolute;
+          top: 20px;
+          left: -10px;
+          background-color: $naranja;
+          color: #fff;
+          font-weight: bold;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          border-radius: 999px;
+        }
+      }
+    }
+  }
+  a{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 input {
   border: none;
   padding: 0.8em;

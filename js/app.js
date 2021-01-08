@@ -62,41 +62,72 @@ submenu.classList.remove("submenuAbierto")
 flecha.innerHTML="&#9654;"
 escondido=true
 })
-//carrusel
 
-
-//carrusel
 
 const cambio = () => {
   console.log(`Actual ${this.currentSlide}`)
 }
 
 
-
-const carrusel = new Siema({
-  selector: ".slideHome",
-  easing: "ease-out",
-  //perPage: 2,
-  loop: true,
-  draggable: true,
-  perPage:{
-    768:2,
-    1024:3
-  },
-  onInit: cambio,
-  onChange: cambio,
-});
-
 const izq = document.querySelector("#izq")
 const der = document.querySelector("#der")
 
-izq.addEventListener("click", (e) => {
-  e.preventDefault()
-  carrusel.prev()
-})
-der.addEventListener("click", (e) => {
-  e.preventDefault()
-  carrusel.next()
-})
+
+if (document.URL.indexOf("index") >= 0) {
+  const carrusel = new Siema({
+    selector: ".slideHome",
+    easing: "ease-out",
+    //perPage: 2,
+    loop: true,
+    draggable: true,
+    perPage:{
+      768:2,
+      1024:3
+    },
+    onInit: cambio,
+    onChange: cambio,
+  });
+
+  izq.addEventListener("click", (e) => {
+    e.preventDefault()
+    carrusel.prev()
+  })
+  der.addEventListener("click", (e) => {
+    e.preventDefault()
+    carrusel.next()
+  })
+  
+}
+
+
+//bigen polvo
+if (document.URL.indexOf("bigen-polvo") >= 0) {
+  const carrusel = new Siema({
+    selector: "#slidePro",
+    easing: "ease-out",
+    //perPage: 2,
+    loop: false,
+    draggable: true,
+    perPage:{
+      0:2,
+      768:3,
+      1024:5
+    }
+  });
+
+  izq.addEventListener("click", (e) => {
+    e.preventDefault()
+    carrusel.prev()
+  })
+  der.addEventListener("click", (e) => {
+    e.preventDefault()
+    carrusel.next()
+  })
+  
+
+}
+
+
+
 
 
