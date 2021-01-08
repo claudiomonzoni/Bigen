@@ -4,7 +4,7 @@
 //vars
 
 $naranja: #e39950;
-$verde: #bfcf30;
+$verde: #bfd031;
 $verdeOscuro: #7c8708;
 $gris: #e6e6e6;
 $rosa: #f59176;
@@ -1132,6 +1132,7 @@ button {
       }
     }
   }
+
   #caracteristicas {
     h2 {
       font-size: 3em;
@@ -1152,12 +1153,36 @@ button {
       }
     }
   }
+
+
+  
+}
+
+.fondoBigenPolvo{
   background: url(../img/bp/bigen_polvo_fondo_modelo.jpg) no-repeat;
   background-position: left bottom;
   background-size: 30%;
 
   @include cel {
     background-size: 50%;
+  }
+}
+.fondoSpeedy{
+  background: url(../img/bsc/bigen-speedy-color-fondo-modelo.jpg) no-repeat;
+  background-position: left bottom;
+  background-size: 30%;
+
+  @include cel {
+    background-size: 50%;
+  }
+}
+.fondoBeard{
+  background: url(../img/bbc/bigen_beard_color_fondo_modelo.jpg) no-repeat;
+  background-position: -80px bottom;
+  background-size: 50%;
+
+  @include cel {
+    background-size: 90%;
   }
 }
 
@@ -1249,30 +1274,95 @@ button {
       @include paso($rosa, #000, #fff);
     }
   }
-  @include fondo("../img/bp/bigen_polvo_fondo_modelo2.jpg", 60%, 80%)
+  #barraSpeedy{
+    @include barra($naranja, #fff )
+  }
+  #pasosSpeedy {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateY(-100px);
+    .paso {
+      @include paso($azul, $naranja, #fff);
+    }
+  }
+
+  @include fondo("../img/bp/bigen_polvo_fondo_modelo2.jpg", 60%, 80%);
 }
-#pasoapaso{
+
+#aplicacionSpeedy {
+  .bandeja {
+    grid-column: 2;
+    @extend .elconte;
+  }
+  #barra{
+    @include barra($naranja, #fff )
+  }
+  #pasos {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateY(-100px);
+    .paso {
+      @include paso($azul, $naranja, #fff);
+    }
+  }
+
+  @include fondo("../img/bsc/bigen-speedy-color-fondo-modelo2.jpg", 60%, 50%);
+}
+
+#aplicacionBeard {
+  .bandeja {
+    grid-column: 2;
+    @extend .elconte;
+  }
+  #barra{
+    @include barra($azul, #fff )
+  }
+  #pasos {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateY(-100px);
+    .paso {
+      @include paso($verde, #fff, $azul);
+    }
+  }
+
+  @include fondo("../img/bbc/bigen_beard_color_fondo_modelo2.jpg", 50%, 50%);
+}
+
+.desapa{
+  display: none;
+  @include cel{
+    display: block;
+  }
+  @include tableta{
+    display: block;
+  }
+}
+#pasoapaso {
   @extend .elconte;
   padding: 0 15% 3em;
-  @include cel{
+  @include cel {
     padding: 0 0% 3em;
   }
-  .bandeja{
+  .bandeja {
     grid-column: 2;
     text-align: center;
-    h2{
+    h2 {
       font-size: 2em;
       padding: 1em 0 0.5em;
     }
-    p{
-      padding:1em 0;
+    p {
+      padding: 1em 0;
     }
-    ul{
-      li{
+    ul {
+      li {
         text-align: left;
         position: relative;
         padding: 1em 0 1em 2em;
-        span{
+        span {
           position: absolute;
           top: 20px;
           left: -10px;
@@ -1287,7 +1377,7 @@ button {
       }
     }
   }
-  a{
+  a {
     position: relative;
     left: 50%;
     transform: translateX(-50%);

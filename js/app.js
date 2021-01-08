@@ -101,7 +101,7 @@ if (document.URL.indexOf("index") >= 0) {
 
 
 //bigen polvo
-if (document.URL.indexOf("bigen-polvo") >= 0) {
+if (document.URL.indexOf("bigen-polvo" && "") >= 0) {
   const carrusel = new Siema({
     selector: "#slidePro",
     easing: "ease-out",

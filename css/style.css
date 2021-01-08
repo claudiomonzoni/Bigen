@@ -103,7 +103,7 @@ p {
       grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
 }
 
-.elconte, #blogHome .bandeja, #descubre, #compromiso .bandeja, #bigenProductos, #aplicacion .bandeja, #pasoapaso {
+.elconte, #blogHome .bandeja, #descubre, #compromiso .bandeja, #bigenProductos, #aplicacion .bandeja, #aplicacionSpeedy .bandeja, #aplicacionBeard .bandeja, #pasoapaso {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10% 1fr 10%;
@@ -116,7 +116,7 @@ p {
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
-  .elconte, #blogHome .bandeja, #descubre, #compromiso .bandeja, #bigenProductos, #aplicacion .bandeja, #pasoapaso {
+  .elconte, #blogHome .bandeja, #descubre, #compromiso .bandeja, #bigenProductos, #aplicacion .bandeja, #aplicacionSpeedy .bandeja, #aplicacionBeard .bandeja, #pasoapaso {
     grid-column: 1 / -1;
   }
 }
@@ -409,7 +409,7 @@ button {
 }
 
 .submenu ul li span {
-  background-color: #bfcf30;
+  background-color: #bfd031;
   padding-left: 40%;
   height: auto;
 }
@@ -625,7 +625,7 @@ button {
     border-bottom: solid 1px #e39950;
   }
   #mainNav .anchor li:nth-child(2n + 0) {
-    border-bottom: solid 1px #bfcf30;
+    border-bottom: solid 1px #bfd031;
   }
   #mainNav .anchor li:nth-child(3n + 0) {
     border-bottom: solid 1px #000;
@@ -958,7 +958,7 @@ button {
   margin-bottom: 0.5em;
 }
 
-#conoceBigenHome .elconte .bandeja, #conoceBigenHome #blogHome .bandeja .bandeja, #blogHome #conoceBigenHome .bandeja .bandeja, #conoceBigenHome #descubre .bandeja, #conoceBigenHome #compromiso .bandeja .bandeja, #compromiso #conoceBigenHome .bandeja .bandeja, #conoceBigenHome #bigenProductos .bandeja, #conoceBigenHome #aplicacion .bandeja .bandeja, #aplicacion #conoceBigenHome .bandeja .bandeja, #conoceBigenHome #pasoapaso .bandeja {
+#conoceBigenHome .elconte .bandeja, #conoceBigenHome #blogHome .bandeja .bandeja, #blogHome #conoceBigenHome .bandeja .bandeja, #conoceBigenHome #descubre .bandeja, #conoceBigenHome #compromiso .bandeja .bandeja, #compromiso #conoceBigenHome .bandeja .bandeja, #conoceBigenHome #bigenProductos .bandeja, #conoceBigenHome #aplicacion .bandeja .bandeja, #aplicacion #conoceBigenHome .bandeja .bandeja, #conoceBigenHome #aplicacionSpeedy .bandeja .bandeja, #aplicacionSpeedy #conoceBigenHome .bandeja .bandeja, #conoceBigenHome #aplicacionBeard .bandeja .bandeja, #aplicacionBeard #conoceBigenHome .bandeja .bandeja, #conoceBigenHome #pasoapaso .bandeja {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -969,7 +969,7 @@ button {
           justify-content: space-evenly;
 }
 
-#conoceBigenHome .elconte .productoConoce, #conoceBigenHome #blogHome .bandeja .productoConoce, #blogHome #conoceBigenHome .bandeja .productoConoce, #conoceBigenHome #descubre .productoConoce, #conoceBigenHome #compromiso .bandeja .productoConoce, #compromiso #conoceBigenHome .bandeja .productoConoce, #conoceBigenHome #bigenProductos .productoConoce, #conoceBigenHome #aplicacion .bandeja .productoConoce, #aplicacion #conoceBigenHome .bandeja .productoConoce, #conoceBigenHome #pasoapaso .productoConoce {
+#conoceBigenHome .elconte .productoConoce, #conoceBigenHome #blogHome .bandeja .productoConoce, #blogHome #conoceBigenHome .bandeja .productoConoce, #conoceBigenHome #descubre .productoConoce, #conoceBigenHome #compromiso .bandeja .productoConoce, #compromiso #conoceBigenHome .bandeja .productoConoce, #conoceBigenHome #bigenProductos .productoConoce, #conoceBigenHome #aplicacion .bandeja .productoConoce, #aplicacion #conoceBigenHome .bandeja .productoConoce, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConoce, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConoce, #conoceBigenHome #aplicacionBeard .bandeja .productoConoce, #aplicacionBeard #conoceBigenHome .bandeja .productoConoce, #conoceBigenHome #pasoapaso .productoConoce {
   margin-top: 5em;
   text-align: center;
   display: -webkit-box;
@@ -984,12 +984,12 @@ button {
           align-items: center;
 }
 
-#conoceBigenHome .elconte .productoConoce h2, #conoceBigenHome #blogHome .bandeja .productoConoce h2, #blogHome #conoceBigenHome .bandeja .productoConoce h2, #conoceBigenHome #descubre .productoConoce h2, #conoceBigenHome #compromiso .bandeja .productoConoce h2, #compromiso #conoceBigenHome .bandeja .productoConoce h2, #conoceBigenHome #bigenProductos .productoConoce h2, #conoceBigenHome #aplicacion .bandeja .productoConoce h2, #aplicacion #conoceBigenHome .bandeja .productoConoce h2, #conoceBigenHome #pasoapaso .productoConoce h2 {
+#conoceBigenHome .elconte .productoConoce h2, #conoceBigenHome #blogHome .bandeja .productoConoce h2, #blogHome #conoceBigenHome .bandeja .productoConoce h2, #conoceBigenHome #descubre .productoConoce h2, #conoceBigenHome #compromiso .bandeja .productoConoce h2, #compromiso #conoceBigenHome .bandeja .productoConoce h2, #conoceBigenHome #bigenProductos .productoConoce h2, #conoceBigenHome #aplicacion .bandeja .productoConoce h2, #aplicacion #conoceBigenHome .bandeja .productoConoce h2, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConoce h2, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConoce h2, #conoceBigenHome #aplicacionBeard .bandeja .productoConoce h2, #aplicacionBeard #conoceBigenHome .bandeja .productoConoce h2, #conoceBigenHome #pasoapaso .productoConoce h2 {
   font-size: 2em;
   padding: 0.6em 0;
 }
 
-#conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #descubre .productoConocepolvo, #conoceBigenHome #compromiso .bandeja .productoConocepolvo, #compromiso #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #bigenProductos .productoConocepolvo, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #pasoapaso .productoConocepolvo {
+#conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #descubre .productoConocepolvo, #conoceBigenHome #compromiso .bandeja .productoConocepolvo, #compromiso #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #bigenProductos .productoConocepolvo, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConocepolvo, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #aplicacionBeard .bandeja .productoConocepolvo, #aplicacionBeard #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #pasoapaso .productoConocepolvo {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr;
@@ -998,13 +998,13 @@ button {
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
-  #conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #descubre .productoConocepolvo, #conoceBigenHome #compromiso .bandeja .productoConocepolvo, #compromiso #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #bigenProductos .productoConocepolvo, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #pasoapaso .productoConocepolvo {
+  #conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #descubre .productoConocepolvo, #conoceBigenHome #compromiso .bandeja .productoConocepolvo, #compromiso #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #bigenProductos .productoConocepolvo, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConocepolvo, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #aplicacionBeard .bandeja .productoConocepolvo, #aplicacionBeard #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #pasoapaso .productoConocepolvo {
     margin: 5em 0%;
   }
 }
 
 @media (max-width: 479px) {
-  #conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #descubre .productoConocepolvo, #conoceBigenHome #compromiso .bandeja .productoConocepolvo, #compromiso #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #bigenProductos .productoConocepolvo, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #pasoapaso .productoConocepolvo {
+  #conoceBigenHome .elconte .productoConocepolvo, #conoceBigenHome #blogHome .bandeja .productoConocepolvo, #blogHome #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #descubre .productoConocepolvo, #conoceBigenHome #compromiso .bandeja .productoConocepolvo, #compromiso #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #bigenProductos .productoConocepolvo, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConocepolvo, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #aplicacionBeard .bandeja .productoConocepolvo, #aplicacionBeard #conoceBigenHome .bandeja .productoConocepolvo, #conoceBigenHome #pasoapaso .productoConocepolvo {
     margin: 5em 0%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1013,12 +1013,12 @@ button {
   }
 }
 
-#conoceBigenHome .elconte .productoConocepolvo .bandejaA, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandejaA, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandejaA, #conoceBigenHome #descubre .productoConocepolvo .bandejaA, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandejaA, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandejaA, #conoceBigenHome #bigenProductos .productoConocepolvo .bandejaA, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandejaA, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandejaA, #conoceBigenHome #pasoapaso .productoConocepolvo .bandejaA {
+#conoceBigenHome .elconte .productoConocepolvo .bandejaA, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandejaA, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandejaA, #conoceBigenHome #descubre .productoConocepolvo .bandejaA, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandejaA, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandejaA, #conoceBigenHome #bigenProductos .productoConocepolvo .bandejaA, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandejaA, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandejaA, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConocepolvo .bandejaA, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConocepolvo .bandejaA, #conoceBigenHome #aplicacionBeard .bandeja .productoConocepolvo .bandejaA, #aplicacionBeard #conoceBigenHome .bandeja .productoConocepolvo .bandejaA, #conoceBigenHome #pasoapaso .productoConocepolvo .bandejaA {
   text-align: center;
   margin: 0 2em;
 }
 
-#conoceBigenHome .elconte .productoConocepolvo .bandeja, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #descubre .productoConocepolvo .bandeja, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja {
+#conoceBigenHome .elconte .productoConocepolvo .bandeja, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #descubre .productoConocepolvo .bandeja, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConocepolvo .bandeja, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #aplicacionBeard .bandeja .productoConocepolvo .bandeja, #aplicacionBeard #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1032,14 +1032,14 @@ button {
 }
 
 @media (max-width: 479px) {
-  #conoceBigenHome .elconte .productoConocepolvo .bandeja, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #descubre .productoConocepolvo .bandeja, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja {
+  #conoceBigenHome .elconte .productoConocepolvo .bandeja, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #descubre .productoConocepolvo .bandeja, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConocepolvo .bandeja, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #aplicacionBeard .bandeja .productoConocepolvo .bandeja, #aplicacionBeard #conoceBigenHome .bandeja .productoConocepolvo .bandeja, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja {
     text-align: center;
   }
-  #conoceBigenHome .elconte .productoConocepolvo .bandeja p, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja p, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #descubre .productoConocepolvo .bandeja p, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja p, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja p, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja p, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja p {
+  #conoceBigenHome .elconte .productoConocepolvo .bandeja p, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja p, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #descubre .productoConocepolvo .bandeja p, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja p, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja p, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja p, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConocepolvo .bandeja p, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #aplicacionBeard .bandeja .productoConocepolvo .bandeja p, #aplicacionBeard #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja p {
     text-align: center !important;
     margin: 1em 0;
   }
-  #conoceBigenHome .elconte .productoConocepolvo .bandeja a, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja a, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja a, #conoceBigenHome #descubre .productoConocepolvo .bandeja a, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja a, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja a, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja a, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja a, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja a, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja a {
+  #conoceBigenHome .elconte .productoConocepolvo .bandeja a, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja a, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja a, #conoceBigenHome #descubre .productoConocepolvo .bandeja a, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja a, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja a, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja a, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja a, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja a, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConocepolvo .bandeja a, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConocepolvo .bandeja a, #conoceBigenHome #aplicacionBeard .bandeja .productoConocepolvo .bandeja a, #aplicacionBeard #conoceBigenHome .bandeja .productoConocepolvo .bandeja a, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja a {
     position: relative;
     transform: translateX(-50%);
     left: 50%;
@@ -1048,11 +1048,11 @@ button {
   }
 }
 
-#conoceBigenHome .elconte .productoConocepolvo .bandeja h2, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja h2, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2, #conoceBigenHome #descubre .productoConocepolvo .bandeja h2, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja h2, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja h2, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja h2, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja h2 {
+#conoceBigenHome .elconte .productoConocepolvo .bandeja h2, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja h2, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2, #conoceBigenHome #descubre .productoConocepolvo .bandeja h2, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja h2, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja h2, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja h2, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConocepolvo .bandeja h2, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2, #conoceBigenHome #aplicacionBeard .bandeja .productoConocepolvo .bandeja h2, #aplicacionBeard #conoceBigenHome .bandeja .productoConocepolvo .bandeja h2, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja h2 {
   font-size: 2em;
 }
 
-#conoceBigenHome .elconte .productoConocepolvo .bandeja p, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja p, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #descubre .productoConocepolvo .bandeja p, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja p, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja p, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja p, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja p {
+#conoceBigenHome .elconte .productoConocepolvo .bandeja p, #conoceBigenHome #blogHome .bandeja .productoConocepolvo .bandeja p, #blogHome #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #descubre .productoConocepolvo .bandeja p, #conoceBigenHome #compromiso .bandeja .productoConocepolvo .bandeja p, #compromiso #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #bigenProductos .productoConocepolvo .bandeja p, #conoceBigenHome #aplicacion .bandeja .productoConocepolvo .bandeja p, #aplicacion #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #aplicacionSpeedy .bandeja .productoConocepolvo .bandeja p, #aplicacionSpeedy #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #aplicacionBeard .bandeja .productoConocepolvo .bandeja p, #aplicacionBeard #conoceBigenHome .bandeja .productoConocepolvo .bandeja p, #conoceBigenHome #pasoapaso .productoConocepolvo .bandeja p {
   text-align: left;
   margin: 1em 0;
 }
@@ -1468,12 +1468,6 @@ button {
   background-color: #e39950;
 }
 
-#bigenProductos {
-  background: url(../img/bp/bigen_polvo_fondo_modelo.jpg) no-repeat;
-  background-position: left bottom;
-  background-size: 30%;
-}
-
 #bigenProductos .bandeja {
   -ms-grid-column: 2;
   grid-column: 2;
@@ -1595,9 +1589,39 @@ button {
   }
 }
 
+.fondoBigenPolvo {
+  background: url(../img/bp/bigen_polvo_fondo_modelo.jpg) no-repeat;
+  background-position: left bottom;
+  background-size: 30%;
+}
+
 @media (max-width: 479px) {
-  #bigenProductos {
+  .fondoBigenPolvo {
     background-size: 50%;
+  }
+}
+
+.fondoSpeedy {
+  background: url(../img/bsc/bigen-speedy-color-fondo-modelo.jpg) no-repeat;
+  background-position: left bottom;
+  background-size: 30%;
+}
+
+@media (max-width: 479px) {
+  .fondoSpeedy {
+    background-size: 50%;
+  }
+}
+
+.fondoBeard {
+  background: url(../img/bbc/bigen_beard_color_fondo_modelo.jpg) no-repeat;
+  background-position: -80px bottom;
+  background-size: 50%;
+}
+
+@media (max-width: 479px) {
+  .fondoBeard {
+    background-size: 90%;
   }
 }
 
@@ -1718,6 +1742,368 @@ button {
 
 #aplicacion #pasos .paso .conte p {
   color: #fff;
+}
+
+#aplicacion #barraSpeedy {
+  grid-column: 1/-1;
+  background-color: #e39950;
+  text-align: center;
+}
+
+#aplicacion #barraSpeedy h2 {
+  color: #fff;
+  font-size: 2em;
+  padding: 2em 0 4em;
+}
+
+@media (max-width: 479px) {
+  #aplicacion #barraSpeedy h2 {
+    font-size: 1.7em;
+  }
+}
+
+#aplicacion #pasosSpeedy {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+#aplicacion #pasosSpeedy .paso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  padding: 1em;
+}
+
+#aplicacion #pasosSpeedy .paso .conteIma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #2d3756));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, #2d3756 50%);
+}
+
+#aplicacion #pasosSpeedy .paso .conteIma img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 479px) {
+  #aplicacion #pasosSpeedy .paso .conteIma img {
+    width: 100px;
+  }
+}
+
+#aplicacion #pasosSpeedy .paso .conte {
+  background-color: #2d3756;
+  padding: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 15vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#aplicacion #pasosSpeedy .paso .conte h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: #fff;
+  font-size: 2em;
+}
+
+@media (max-width: 479px) {
+  #aplicacion #pasosSpeedy .paso .conte h2 {
+    font-size: 1.5em;
+  }
+}
+
+#aplicacion #pasosSpeedy .paso .conte span {
+  font-size: 1em !important;
+  color: #e39950;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#aplicacion #pasosSpeedy .paso .conte p {
+  color: #fff;
+}
+
+#aplicacionSpeedy {
+  background: url("../img/bsc/bigen-speedy-color-fondo-modelo2.jpg") no-repeat;
+  background-size: 60%;
+  background-position: right 50%;
+}
+
+#aplicacionSpeedy .bandeja {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+#aplicacionSpeedy #barra {
+  grid-column: 1/-1;
+  background-color: #e39950;
+  text-align: center;
+}
+
+#aplicacionSpeedy #barra h2 {
+  color: #fff;
+  font-size: 2em;
+  padding: 2em 0 4em;
+}
+
+@media (max-width: 479px) {
+  #aplicacionSpeedy #barra h2 {
+    font-size: 1.7em;
+  }
+}
+
+#aplicacionSpeedy #pasos {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+#aplicacionSpeedy #pasos .paso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  padding: 1em;
+}
+
+#aplicacionSpeedy #pasos .paso .conteIma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #2d3756));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, #2d3756 50%);
+}
+
+#aplicacionSpeedy #pasos .paso .conteIma img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 479px) {
+  #aplicacionSpeedy #pasos .paso .conteIma img {
+    width: 100px;
+  }
+}
+
+#aplicacionSpeedy #pasos .paso .conte {
+  background-color: #2d3756;
+  padding: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 15vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#aplicacionSpeedy #pasos .paso .conte h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: #fff;
+  font-size: 2em;
+}
+
+@media (max-width: 479px) {
+  #aplicacionSpeedy #pasos .paso .conte h2 {
+    font-size: 1.5em;
+  }
+}
+
+#aplicacionSpeedy #pasos .paso .conte span {
+  font-size: 1em !important;
+  color: #e39950;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#aplicacionSpeedy #pasos .paso .conte p {
+  color: #fff;
+}
+
+#aplicacionBeard {
+  background: url("../img/bbc/bigen_beard_color_fondo_modelo2.jpg") no-repeat;
+  background-size: 50%;
+  background-position: right 50%;
+}
+
+#aplicacionBeard .bandeja {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+#aplicacionBeard #barra {
+  grid-column: 1/-1;
+  background-color: #2d3756;
+  text-align: center;
+}
+
+#aplicacionBeard #barra h2 {
+  color: #fff;
+  font-size: 2em;
+  padding: 2em 0 4em;
+}
+
+@media (max-width: 479px) {
+  #aplicacionBeard #barra h2 {
+    font-size: 1.7em;
+  }
+}
+
+#aplicacionBeard #pasos {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+#aplicacionBeard #pasos .paso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  padding: 1em;
+}
+
+#aplicacionBeard #pasos .paso .conteIma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #bfd031));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, #bfd031 50%);
+}
+
+#aplicacionBeard #pasos .paso .conteIma img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 479px) {
+  #aplicacionBeard #pasos .paso .conteIma img {
+    width: 100px;
+  }
+}
+
+#aplicacionBeard #pasos .paso .conte {
+  background-color: #bfd031;
+  padding: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 15vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#aplicacionBeard #pasos .paso .conte h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: #2d3756;
+  font-size: 2em;
+}
+
+@media (max-width: 479px) {
+  #aplicacionBeard #pasos .paso .conte h2 {
+    font-size: 1.5em;
+  }
+}
+
+#aplicacionBeard #pasos .paso .conte span {
+  font-size: 1em !important;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#aplicacionBeard #pasos .paso .conte p {
+  color: #2d3756;
+}
+
+.desapa {
+  display: none;
+}
+
+@media (max-width: 479px) {
+  .desapa {
+    display: block;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .desapa {
+    display: block;
+  }
 }
 
 #pasoapaso {
