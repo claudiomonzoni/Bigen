@@ -1153,12 +1153,9 @@ button {
       }
     }
   }
-
-
-  
 }
 
-.fondoBigenPolvo{
+.fondoBigenPolvo {
   background: url(../img/bp/bigen_polvo_fondo_modelo.jpg) no-repeat;
   background-position: left bottom;
   background-size: 30%;
@@ -1167,7 +1164,7 @@ button {
     background-size: 50%;
   }
 }
-.fondoSpeedy{
+.fondoSpeedy {
   background: url(../img/bsc/bigen-speedy-color-fondo-modelo.jpg) no-repeat;
   background-position: left bottom;
   background-size: 30%;
@@ -1176,7 +1173,7 @@ button {
     background-size: 50%;
   }
 }
-.fondoBeard{
+.fondoBeard {
   background: url(../img/bbc/bigen_beard_color_fondo_modelo.jpg) no-repeat;
   background-position: -80px bottom;
   background-size: 50%;
@@ -1274,8 +1271,8 @@ button {
       @include paso($rosa, #000, #fff);
     }
   }
-  #barraSpeedy{
-    @include barra($naranja, #fff )
+  #barraSpeedy {
+    @include barra($naranja, #fff);
   }
   #pasosSpeedy {
     grid-column: 2;
@@ -1295,8 +1292,8 @@ button {
     grid-column: 2;
     @extend .elconte;
   }
-  #barra{
-    @include barra($naranja, #fff )
+  #barra {
+    @include barra($naranja, #fff);
   }
   #pasos {
     grid-column: 2;
@@ -1316,8 +1313,8 @@ button {
     grid-column: 2;
     @extend .elconte;
   }
-  #barra{
-    @include barra($azul, #fff )
+  #barra {
+    @include barra($azul, #fff);
   }
   #pasos {
     grid-column: 2;
@@ -1332,12 +1329,12 @@ button {
   @include fondo("../img/bbc/bigen_beard_color_fondo_modelo2.jpg", 50%, 50%);
 }
 
-.desapa{
+.desapa {
   display: none;
-  @include cel{
+  @include cel {
     display: block;
   }
-  @include tableta{
+  @include tableta {
     display: block;
   }
 }
@@ -1396,21 +1393,220 @@ button {
   width: 100%;
   height: 100%;
 }
-
-input {
-  border: none;
-  padding: 0.8em;
-  width: 100%;
-  margin: 0;
-  &::placeholder {
-    font-weight: bold;
+//encuentra
+#ecuentra {
+  h1 {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+  }
+  p {
     text-align: center;
-    color: $naranja;
+    padding: 0 10%;
   }
 }
-button {
-  color: #fff;
+#logosEncuentra {
   background-color: $naranja;
-  margin: 0;
-  font-size: 2.5em;
+  padding: 2em;
+  @include cel {
+    padding: 2em 0em;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3em;
+  .logosCompra {
+    flex-basis: 12%;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+    @include cel {
+      flex-basis: 40%;
+    }
+  }
 }
+
+#formalarioEcuentra {
+  background: url(../img/comprar/fondo_comprar.jpg) no-repeat #010100;
+  background-size: cover;
+
+  #formu {
+    @extend .elconte;
+
+    grid-column: 2;
+    padding: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    label,
+    p {
+      color: #fff;
+    }
+    label {
+      flex: 1 0 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 1em 1em;
+    }
+    input,
+    textarea {
+      border: solid 1px #fff;
+      background: transparent;
+      padding: 0.8em;
+      color: #fff;
+      margin: 0;
+      &::placeholder {
+        font-weight: bold;
+        text-align: center;
+        color: $naranja;
+      }
+    }
+    #comentarios {
+      flex-basis: 100%;
+    }
+    .radio {
+      flex-basis: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 2em 0;
+      @include cel {
+        display: block;
+        text-align: center;
+      }
+      p {
+        padding-bottom: 0.5em;
+        flex-basis: 100%;
+      }
+      label {
+        all: initial;
+        color: #fff;
+        font-family: "Titillium Web", sans-serif;
+        font-size: calc(100% + 0.1vw);
+      }
+    }
+    input[type="submit"] {
+      background-color: #fff;
+      color: #000;
+      flex-basis: 20%;
+      height: 40px;
+      @include cel {
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+
+//dudas
+#dudas{
+
+  h1{
+    margin-bottom: 0.5em;
+  }
+  p{
+    padding:0 10%;
+    text-align: center;
+    margin-bottom: 4em;
+  }
+}
+#conte {
+  background: url(../img/resuelve/resuelve_fondo_modelo.jpg) no-repeat, url(../img/resuelve/resuelve_fondo_modelo2.jpg) no-repeat;
+  background-size: 40%, 40%;
+  background-position: right top, left bottom;
+  #respuestas {
+    @extend .elconte;
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+
+    .tintesLigas {
+      flex: 1 1 auto;
+      align-self: flex-start;
+      position: sticky;
+      top: 0%;
+      border-right: solid 2px #000;
+      margin-right: 2em;
+      text-align: center;
+      .tinte{
+        padding: 1em;
+        font-weight: bold;
+      }
+      @include cel{
+        display: flex;
+        justify-content: space-around;
+        border-right: none;
+        border-bottom: solid 1px $gris;
+        background-color: #fff;
+        padding: 1em 0;
+        flex: 1 0 100%;
+      }
+    }
+    .bandejaRes {
+      flex: 1 0 60%;
+      @include cel{
+        flex: 1 0 100%;
+        padding: 5%;
+      }
+      h2 {
+        font-family: "Bebas Neue", cursive;
+        font-size: 2.5em;
+        padding: 1em 0 0.5em;
+      }
+      h2:first-child {
+        padding: 0 0 0.5em;
+      }
+
+      h4 {
+        font-family: "Bebas Neue", cursive;
+        font-size: 1.5em;
+        padding: 0 0 1em;
+      }
+      p {
+        padding: 1em 0;
+        display: none;
+      }
+    }
+  }
+  #otraduda{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4em ;
+    h2{
+      flex-basis: 100%;
+      margin-bottom: 1em;
+    }
+  }
+
+
+}
+#productosDudas{
+  background-color: $naranja;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+      .ligasSeccionesDudas{
+        @include cel{
+          flex: 1;
+        }
+        text-align: center;
+        color: #fff;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        img{
+          transform: translateX(20px);
+          -webkit-transform: translateX(20px);
+        } 
+        p{
+          font-weight: bold;
+          padding-bottom: 1em;
+        }
+        &:nth-child(3){
+        justify-content: space-between;
+        }
+      }
+    }
