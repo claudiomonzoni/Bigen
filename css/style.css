@@ -2430,22 +2430,32 @@ button {
 #conte #respuestas .bandejaRes h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 2.5em;
-  padding: 1em 0 0.5em;
+  padding: 0.5em 0 0.5em;
+  margin-top: 1em;
 }
 
-#conte #respuestas .bandejaRes h2:first-child {
+#conte #respuestas .bandejaRes #Polvo h2 {
   padding: 0 0 0.5em;
+  margin-top: 0em;
 }
 
 #conte #respuestas .bandejaRes h4 {
   font-family: "Bebas Neue", cursive;
   font-size: 1.5em;
-  padding: 0 0 1em;
+  padding: 0 0 0.5em;
 }
 
 #conte #respuestas .bandejaRes p {
-  padding: 1em 0;
-  display: none;
+  margin-bottom: 0em;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#conte #respuestas .bandejaRes .muestrame {
+  max-height: 200px;
+  margin-bottom: 1.5em;
 }
 
 #conte #otraduda {
@@ -2478,6 +2488,13 @@ button {
   padding: 2em;
 }
 
+@media (max-width: 479px) {
+  #productosDudas {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 #productosDudas .ligasSeccionesDudas {
   text-align: center;
   color: #fff;
@@ -2502,6 +2519,9 @@ button {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

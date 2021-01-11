@@ -69,6 +69,55 @@ const cambio = () => {
 }
 
 
+
+// bigen dudas
+
+//scroll suave en dudas
+const links = document.querySelectorAll(".tinte a");
+
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop-220;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
+
+// esconder respuesta
+
+const pregunta = document.querySelectorAll(".pregunta")
+console.log(pregunta)
+pregunta.forEach(item=>{
+
+  item.addEventListener("click", function(e){
+    cerrarPregunta()
+    e.preventDefault()
+    const p = e.target.parentElement.nextElementSibling
+    // const alturaP = p.clientHeight
+    // console.log(alturaP)
+    // p.style.height=alturaP
+    p.classList.add('muestrame')
+  })
+
+})
+
+const cerrarPregunta = ()=>{
+  pregunta.forEach(pregunta =>{
+  //  pregunta.querySelector("p").style.height = "0"
+   pregunta.querySelector("p").classList.remove('muestrame')
+  })
+}
+
+
+
+// carru
 const izq = document.querySelector("#izq")
 const der = document.querySelector("#der")
 
@@ -126,6 +175,8 @@ if (document.URL.indexOf("bigen-polvo" && "") >= 0) {
   
 
 }
+
+
 
 
 

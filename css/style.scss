@@ -1498,19 +1498,19 @@ button {
 }
 
 //dudas
-#dudas{
-
-  h1{
+#dudas {
+  h1 {
     margin-bottom: 0.5em;
   }
-  p{
-    padding:0 10%;
+  p {
+    padding: 0 10%;
     text-align: center;
     margin-bottom: 4em;
   }
 }
 #conte {
-  background: url(../img/resuelve/resuelve_fondo_modelo.jpg) no-repeat, url(../img/resuelve/resuelve_fondo_modelo2.jpg) no-repeat;
+  background: url(../img/resuelve/resuelve_fondo_modelo.jpg) no-repeat,
+    url(../img/resuelve/resuelve_fondo_modelo2.jpg) no-repeat;
   background-size: 40%, 40%;
   background-position: right top, left bottom;
   #respuestas {
@@ -1527,11 +1527,11 @@ button {
       border-right: solid 2px #000;
       margin-right: 2em;
       text-align: center;
-      .tinte{
+      .tinte {
         padding: 1em;
         font-weight: bold;
       }
-      @include cel{
+      @include cel {
         display: flex;
         justify-content: space-around;
         border-right: none;
@@ -1543,70 +1543,80 @@ button {
     }
     .bandejaRes {
       flex: 1 0 60%;
-      @include cel{
+      @include cel {
         flex: 1 0 100%;
         padding: 5%;
       }
       h2 {
         font-family: "Bebas Neue", cursive;
         font-size: 2.5em;
-        padding: 1em 0 0.5em;
-      }
-      h2:first-child {
-        padding: 0 0 0.5em;
+        padding: 0.5em 0 0.5em;
+        margin-top: 1em;
       }
 
+      #Polvo h2 {
+        padding: 0 0 0.5em;
+        margin-top: 0em;
+      }
       h4 {
         font-family: "Bebas Neue", cursive;
         font-size: 1.5em;
-        padding: 0 0 1em;
+        padding: 0 0 0.5em;
       }
       p {
-        padding: 1em 0;
-        display: none;
+        margin-bottom: 0em;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 1s ease;
+      }
+      .muestrame{
+        max-height: 200px;
+        margin-bottom: 1.5em;
       }
     }
   }
-  #otraduda{
+  #otraduda {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 4em ;
-    h2{
+    padding: 4em;
+    h2 {
       flex-basis: 100%;
       margin-bottom: 1em;
     }
   }
-
-
 }
-#productosDudas{
+#productosDudas {
   background-color: $naranja;
   display: flex;
   justify-content: center;
   padding: 2em;
-      .ligasSeccionesDudas{
-        @include cel{
-          flex: 1;
-        }
-        text-align: center;
-        color: #fff;
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        img{
-          transform: translateX(20px);
-          -webkit-transform: translateX(20px);
-        } 
-        p{
-          font-weight: bold;
-          padding-bottom: 1em;
-        }
-        &:nth-child(3){
-        justify-content: space-between;
-        }
-      }
+  @include cel {
+   flex-wrap: wrap;
+  }
+  .ligasSeccionesDudas {
+    @include cel {
+      flex: 1;
+      justify-content: space-between;
     }
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+      transform: translateX(20px);
+      -webkit-transform: translateX(20px);
+    }
+    p {
+      font-weight: bold;
+      padding-bottom: 1em;
+    }
+    &:nth-child(3) {
+      justify-content: space-between;
+    }
+  }
+}
