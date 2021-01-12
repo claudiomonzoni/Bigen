@@ -342,23 +342,36 @@ button {
   background-color: #e6e6e6;
   ul {
     display: flex;
-    li {
-      position: relative;
-      display: flex;
-      align-items: center;
-      padding: 0 1em;
-      flex: 1 0 40%;
-      span {
-        background-color: $verde;
+    a{
+      display: block;
+      li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0 1em;
+        flex: 1 0 40%;
+        span {
+          background-color: $verde;
+          padding-left: 40%;
+          height: auto;
+        }
+      }
+
+    }
+  
+     a:first-child li span {
+      background-color: $naranja;
+      padding-left: 50%;
+      @include cel{
         padding-left: 40%;
-        height: auto;
       }
     }
-    li:first-child span {
-      background-color: $naranja;
-    }
-    li:last-child span {
+    a:last-child li span {
       background-color: $rosa;
+      padding-left: 50%;
+      @include cel{
+        padding-left: 40%;
+      }
     }
     img {
       position: absolute;
@@ -1188,6 +1201,13 @@ button {
   display: flex;
   flex: 1 0 50%;
   padding: 1em;
+  @include cel{
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
   .conteIma {
     display: flex;
@@ -1197,6 +1217,17 @@ button {
       rgba(255, 255, 255, 0) 50%,
       $colorFondo 50%
     );
+
+    @include cel{
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 50%,
+        $colorFondo 50%
+      );
+      justify-content: center;
+      width: 100%;
+    }
+
     img {
       align-self: center;
       @include cel {
@@ -1327,6 +1358,9 @@ button {
   }
 
   @include fondo("../img/bbc/bigen_beard_color_fondo_modelo2.jpg", 50%, 50%);
+  @include cel{
+    @include fondo("../img/bbc/bigen_beard_color_fondo_modelo2.jpg", 120%, 35%);
+  }
 }
 
 .desapa {
