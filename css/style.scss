@@ -1425,6 +1425,13 @@ button {
   }
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
 #formalarioEcuentra {
   background: url(../img/comprar/fondo_comprar.jpg) no-repeat #010100;
   background-size: cover;
@@ -1709,6 +1716,21 @@ button {
     }
     .tar:nth-child(3) {
       border-bottom: solid 10px $rosa;
+    }
+  }
+}
+#privacidad{
+  background: url(../img/privacidad.jpg) no-repeat;
+  background-size: 50%;
+  background-position: top right;
+  .conte{
+
+    @extend .elconte;
+  }
+  .bandeja{
+    grid-column: 2;
+    p{
+      padding: 1em 0;
     }
   }
 }
