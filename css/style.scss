@@ -1569,7 +1569,7 @@ button {
         overflow: hidden;
         transition: all 1s ease;
       }
-      .muestrame{
+      .muestrame {
         max-height: 200px;
         margin-bottom: 1.5em;
       }
@@ -1593,7 +1593,7 @@ button {
   justify-content: center;
   padding: 2em;
   @include cel {
-   flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .ligasSeccionesDudas {
     @include cel {
@@ -1617,6 +1617,98 @@ button {
     }
     &:nth-child(3) {
       justify-content: space-between;
+    }
+  }
+}
+#contactoh1 {
+  h1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  p {
+    padding: 0 10%;
+    text-align: center;
+    margin-bottom: 2.5em;
+  }
+}
+#contactoBandeja {
+  background: url(../img/contacto_fondo.jpg) no-repeat;
+  background-position: right top;
+  background-size: cover;
+  @include cel{
+    background-position: -100px 0px;
+    background-size: 120%;
+
+  }
+  .formuCOnta {
+    @extend .elconte;
+  }
+  .bandeja {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10% 3%;
+    @include cel {
+      padding: 0%;
+    }
+
+    input {
+      background: none;
+      border: none;
+      border-bottom: solid 2px #000;
+      padding: 1em;
+    }
+    select,
+    textarea {
+      border: solid 2px #000;
+      padding: 1em;
+      background: none;
+    }
+
+    label {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      @include cel {
+        flex-basis: 100%;
+      }
+    }
+    label[for="Comentarios"] {
+      flex-basis: 100%;
+    }
+    input[type="submit"] {
+      background-color: #000;
+      color: #fff;
+      flex-basis: 30%;
+      @include cel{
+        flex-basis: 50%;
+      }
+    }
+  }
+  #tarjetas {
+    flex-basis: 100%;
+    display: flex;
+    margin: 3em 0;
+    @include cel{
+      flex-wrap: wrap;
+    }
+    .tar {
+      flex: 1;
+      background-color: #fff;
+      padding: 2em;
+      text-align: center;
+      margin: 1em;
+      border-bottom: solid 10px $naranja;
+      -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6);
+    }
+    .tar:nth-child(2) {
+      border-bottom: solid 10px $verde;
+    }
+    .tar:nth-child(3) {
+      border-bottom: solid 10px $rosa;
     }
   }
 }
