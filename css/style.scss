@@ -342,7 +342,7 @@ button {
   background-color: #e6e6e6;
   ul {
     display: flex;
-    a{
+    a {
       display: block;
       li {
         position: relative;
@@ -356,20 +356,19 @@ button {
           height: auto;
         }
       }
-
     }
-  
-     a:first-child li span {
+
+    a:first-child li span {
       background-color: $naranja;
       padding-left: 50%;
-      @include cel{
+      @include cel {
         padding-left: 40%;
       }
     }
     a:last-child li span {
       background-color: $rosa;
       padding-left: 50%;
-      @include cel{
+      @include cel {
         padding-left: 40%;
       }
     }
@@ -813,7 +812,8 @@ button {
 }
 
 #encuentraHome {
-  background-color: $naranja;
+  background: url(../img/fondo_naranja.jpg) no-repeat;
+  background-size: 100% 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 2.5em 0.5em;
@@ -1201,7 +1201,7 @@ button {
   display: flex;
   flex: 1 0 50%;
   padding: 1em;
-  @include cel{
+  @include cel {
     flex-wrap: wrap;
     flex: 1 0 100%;
     flex-direction: column;
@@ -1218,7 +1218,7 @@ button {
       $colorFondo 50%
     );
 
-    @include cel{
+    @include cel {
       background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 50%,
@@ -1358,7 +1358,7 @@ button {
   }
 
   @include fondo("../img/bbc/bigen_beard_color_fondo_modelo2.jpg", 50%, 50%);
-  @include cel{
+  @include cel {
     @include fondo("../img/bbc/bigen_beard_color_fondo_modelo2.jpg", 120%, 35%);
   }
 }
@@ -1453,6 +1453,10 @@ button {
     display: flex;
     justify-content: center;
     margin: 0.5em;
+    img{
+      width: 100%;
+      height: auto;
+    }
     @include cel {
       flex-basis: 40%;
     }
@@ -1464,7 +1468,6 @@ input[type="submit"] {
   -moz-appearance: none;
   appearance: none;
 }
-
 
 #formalarioEcuentra {
   background: url(../img/comprar/fondo_comprar.jpg) no-repeat #010100;
@@ -1570,7 +1573,10 @@ input[type="submit"] {
       text-align: center;
       .tinte {
         padding: 1em;
-        font-weight: bold;
+        p {
+          font-weight: bold;
+       
+        }
       }
       @include cel {
         display: flex;
@@ -1600,9 +1606,29 @@ input[type="submit"] {
         margin-top: 0em;
       }
       h4 {
-        font-family: "Bebas Neue", cursive;
+        // font-family: "Bebas Neue", cursive;
         font-size: 1.5em;
-        padding: 0 0 0.5em;
+        font-weight: bold;
+        padding: 0 0 0.5em 1.2em;
+        position: relative;
+        &:before{
+          content: "";
+          width: 20px;
+          height: 20px;
+          background:url(../img/resuelve/btn_abajo.jpg) no-repeat;
+          background-size: cover;
+          position: absolute;
+          top: 11px;
+          left: 0px;
+        }
+      }
+      .h4Arriba{
+        &:before{
+          content: "";
+          background:url(../img/resuelve/btn_arriba.jpg) no-repeat!important;
+          background-size: cover!important;
+        }
+
       }
       p {
         margin-bottom: 0em;
@@ -1676,10 +1702,9 @@ input[type="submit"] {
   background: url(../img/contacto_fondo.jpg) no-repeat;
   background-position: right top;
   background-size: cover;
-  @include cel{
+  @include cel {
     background-position: -100px 0px;
     background-size: 120%;
-
   }
   .formuCOnta {
     @extend .elconte;
@@ -1723,7 +1748,7 @@ input[type="submit"] {
       background-color: #000;
       color: #fff;
       flex-basis: 30%;
-      @include cel{
+      @include cel {
         flex-basis: 50%;
       }
     }
@@ -1732,7 +1757,7 @@ input[type="submit"] {
     flex-basis: 100%;
     display: flex;
     margin: 3em 0;
-    @include cel{
+    @include cel {
       flex-wrap: wrap;
     }
     .tar {
@@ -1753,17 +1778,16 @@ input[type="submit"] {
     }
   }
 }
-#privacidad{
+#privacidad {
   background: url(../img/privacidad.jpg) no-repeat;
   background-size: 50%;
   background-position: top right;
-  .conte{
-
+  .conte {
     @extend .elconte;
   }
-  .bandeja{
+  .bandeja {
     grid-column: 2;
-    p{
+    p {
       padding: 1em 0;
     }
   }

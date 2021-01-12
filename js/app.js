@@ -93,7 +93,6 @@ function clickHandler(e) {
 // esconder respuesta
 
 const pregunta = document.querySelectorAll(".pregunta")
-console.log(pregunta)
 pregunta.forEach(item=>{
 
   item.addEventListener("click", function(e){
@@ -104,6 +103,8 @@ pregunta.forEach(item=>{
     // console.log(alturaP)
     // p.style.height=alturaP
     p.classList.add('muestrame')
+    e.target.classList.add('h4Arriba')
+    console.log(e.target)
   })
 
 })
@@ -112,6 +113,7 @@ const cerrarPregunta = ()=>{
   pregunta.forEach(pregunta =>{
   //  pregunta.querySelector("p").style.height = "0"
    pregunta.querySelector("p").classList.remove('muestrame')
+   pregunta.querySelector('h4').classList.remove('h4Arriba')
   })
 }
 

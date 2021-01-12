@@ -1076,7 +1076,8 @@ button {
 }
 
 #encuentraHome {
-  background-color: #e39950;
+  background: url(../img/fondo_naranja.jpg) no-repeat;
+  background-size: 100% 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2356,6 +2357,11 @@ button {
   margin: 0.5em;
 }
 
+#logosEncuentra .logosCompra img {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 479px) {
   #logosEncuentra .logosCompra {
     -ms-flex-preferred-size: 40%;
@@ -2540,6 +2546,9 @@ input[type="submit"] {
 
 #conte #respuestas .tintesLigas .tinte {
   padding: 1em;
+}
+
+#conte #respuestas .tintesLigas .tinte p {
   font-weight: bold;
 }
 
@@ -2588,9 +2597,27 @@ input[type="submit"] {
 }
 
 #conte #respuestas .bandejaRes h4 {
-  font-family: "Bebas Neue", cursive;
   font-size: 1.5em;
-  padding: 0 0 0.5em;
+  font-weight: bold;
+  padding: 0 0 0.5em 1.2em;
+  position: relative;
+}
+
+#conte #respuestas .bandejaRes h4:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../img/resuelve/btn_abajo.jpg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 11px;
+  left: 0px;
+}
+
+#conte #respuestas .bandejaRes .h4Arriba:before {
+  content: "";
+  background: url(../img/resuelve/btn_arriba.jpg) no-repeat !important;
+  background-size: cover !important;
 }
 
 #conte #respuestas .bandejaRes p {
