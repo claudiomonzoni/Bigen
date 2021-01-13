@@ -76,6 +76,10 @@ p {
   line-height: 1.6em;
 }
 
+.titanium {
+  font-family: "Titillium Web", sans-serif;
+}
+
 .nocel {
   display: block;
 }
@@ -419,7 +423,7 @@ button {
 }
 
 .submenu ul a:first-child li span {
-  background-color: #e39950;
+  background-color: #f08f0d;
   padding-left: 50%;
 }
 
@@ -640,7 +644,7 @@ button {
     padding: 1em 0;
   }
   #mainNav .anchor li:nth-child(1n + 0) {
-    border-bottom: solid 1px #e39950;
+    border-bottom: solid 1px #f08f0d;
   }
   #mainNav .anchor li:nth-child(2n + 0) {
     border-bottom: solid 1px #bfd031;
@@ -776,6 +780,7 @@ button {
 
 #recuadros h1 {
   margin-bottom: 0.5em;
+  margin-top: 1.2em;
 }
 
 #recuadros p {
@@ -810,6 +815,7 @@ button {
       -ms-grid-row-align: start;
       align-self: start;
   padding: 0.5em 1.5em;
+  width: 80%;
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -1095,12 +1101,12 @@ button {
 #encuentraHome h2 {
   color: #fff;
   font-size: 2.5em;
-  padding: 1em 0;
   text-align: center;
 }
 
 #encuentraHome img {
   padding: 0 1em;
+  width: 70px;
 }
 
 #encuentraHome span {
@@ -1113,6 +1119,10 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#encuentraHome a {
+  margin-top: 1em;
 }
 
 #blogHome {
@@ -1336,7 +1346,7 @@ button {
 }
 
 #tevesbien {
-  background-color: #e39950;
+  background-color: #f08f0d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1484,7 +1494,7 @@ button {
 }
 
 #compromiso .bandeja #tarjetas .tar:nth-child(3) .recuadro {
-  background-color: #e39950;
+  background-color: #f08f0d;
 }
 
 #bigenProductos .bandeja {
@@ -1518,6 +1528,12 @@ button {
   grid-column: 2;
   -ms-grid-column-align: center;
       justify-self: center;
+  text-align: center;
+  width: 100%;
+}
+
+#bigenProductos #control img {
+  padding: 0 1em;
 }
 
 #bigenProductos #kit {
@@ -1568,7 +1584,7 @@ button {
 
 #bigenProductos #kit .conte ul li::before {
   content: "\2022";
-  color: #e39950;
+  color: #f08f0d;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -1585,23 +1601,23 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #bigenProductos #caracteristicas #circulos .circulo {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 33%;
-          flex: 1 1 33%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
   padding: 2em;
   margin: 2em 0;
 }
 
 @media (max-width: 479px) {
   #bigenProductos #caracteristicas #circulos .circulo {
-    padding: 1em;
-    margin: 0.5em 0;
+    padding: 0em;
+    margin: 0 0;
     -webkit-box-flex: 0;
         -ms-flex: 0 2 50%;
             flex: 0 2 50%;
@@ -1794,7 +1810,7 @@ button {
 
 #aplicacion #barraSpeedy {
   grid-column: 1/-1;
-  background-color: #e39950;
+  background-color: #f08f0d;
   text-align: center;
 }
 
@@ -1919,7 +1935,7 @@ button {
 
 #aplicacion #pasosSpeedy .paso .conte span {
   font-size: 1em !important;
-  color: #e39950;
+  color: #f08f0d;
   width: 100%;
   text-transform: uppercase;
   font-weight: bold;
@@ -1942,7 +1958,7 @@ button {
 
 #aplicacionSpeedy #barra {
   grid-column: 1/-1;
-  background-color: #e39950;
+  background-color: #f08f0d;
   text-align: center;
 }
 
@@ -2067,7 +2083,7 @@ button {
 
 #aplicacionSpeedy #pasos .paso .conte span {
   font-size: 1em !important;
-  color: #e39950;
+  color: #f08f0d;
   width: 100%;
   text-transform: uppercase;
   font-weight: bold;
@@ -2284,7 +2300,7 @@ button {
   position: absolute;
   top: 20px;
   left: -10px;
-  background-color: #e39950;
+  background-color: #f08f0d;
   color: #fff;
   font-weight: bold;
   width: 30px;
@@ -2326,7 +2342,7 @@ button {
 }
 
 #logosEncuentra {
-  background-color: #e39950;
+  background-color: #f08f0d;
   padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2414,7 +2430,8 @@ input[type="submit"] {
 }
 
 #formalarioEcuentra #formu input,
-#formalarioEcuentra #formu textarea {
+#formalarioEcuentra #formu textarea,
+#formalarioEcuentra #formu select {
   border: solid 1px #fff;
   background: transparent;
   padding: 0.8em;
@@ -2423,31 +2440,35 @@ input[type="submit"] {
 }
 
 #formalarioEcuentra #formu input::-webkit-input-placeholder,
-#formalarioEcuentra #formu textarea::-webkit-input-placeholder {
+#formalarioEcuentra #formu textarea::-webkit-input-placeholder,
+#formalarioEcuentra #formu select::-webkit-input-placeholder {
   font-weight: bold;
   text-align: center;
-  color: #e39950;
+  color: #f08f0d;
 }
 
 #formalarioEcuentra #formu input:-ms-input-placeholder,
-#formalarioEcuentra #formu textarea:-ms-input-placeholder {
+#formalarioEcuentra #formu textarea:-ms-input-placeholder,
+#formalarioEcuentra #formu select:-ms-input-placeholder {
   font-weight: bold;
   text-align: center;
-  color: #e39950;
+  color: #f08f0d;
 }
 
 #formalarioEcuentra #formu input::-ms-input-placeholder,
-#formalarioEcuentra #formu textarea::-ms-input-placeholder {
+#formalarioEcuentra #formu textarea::-ms-input-placeholder,
+#formalarioEcuentra #formu select::-ms-input-placeholder {
   font-weight: bold;
   text-align: center;
-  color: #e39950;
+  color: #f08f0d;
 }
 
 #formalarioEcuentra #formu input::placeholder,
-#formalarioEcuentra #formu textarea::placeholder {
+#formalarioEcuentra #formu textarea::placeholder,
+#formalarioEcuentra #formu select::placeholder {
   font-weight: bold;
   text-align: center;
-  color: #e39950;
+  color: #f08f0d;
 }
 
 #formalarioEcuentra #formu #comentarios {
@@ -2600,7 +2621,7 @@ input[type="submit"] {
 #conte #respuestas .bandejaRes h4 {
   font-size: 1.5em;
   font-weight: bold;
-  padding: 0 0 0.5em 1.2em;
+  padding: 0 0 0.8em 1.2em;
   position: relative;
 }
 
@@ -2655,7 +2676,7 @@ input[type="submit"] {
 }
 
 #productosDudas {
-  background-color: #e39950;
+  background-color: #f08f0d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2689,6 +2710,9 @@ input[type="submit"] {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 230px;
+          flex: 0 0 230px;
 }
 
 @media (max-width: 479px) {
@@ -2705,6 +2729,13 @@ input[type="submit"] {
 #productosDudas .ligasSeccionesDudas img {
   transform: translateX(20px);
   -webkit-transform: translateX(20px);
+}
+
+@media (max-width: 479px) {
+  #productosDudas .ligasSeccionesDudas img {
+    width: 130px;
+    height: auto;
+  }
 }
 
 #productosDudas .ligasSeccionesDudas p {
@@ -2839,7 +2870,7 @@ input[type="submit"] {
   padding: 2em;
   text-align: center;
   margin: 1em;
-  border-bottom: solid 10px #e39950;
+  border-bottom: solid 10px #f08f0d;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6);
 }
@@ -2864,7 +2895,7 @@ input[type="submit"] {
 }
 
 #privacidad .bandeja p {
-  padding: 1em 0;
+  padding: 1.5em 0;
 }
 
 #blog {
@@ -2925,14 +2956,14 @@ input[type="submit"] {
       flex-basis: 50%;
   padding: 2em 0;
   background: white;
-  background: -webkit-gradient(linear, left top, right top, color-stop(80%, rgba(255, 255, 255, 0)), color-stop(80%, #e39950));
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, #e39950 80%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, rgba(255, 255, 255, 0)), color-stop(80%, #f08f0d));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, #f08f0d 80%);
 }
 
 @media (max-width: 479px) {
   #blog .bandeja .postBlog .conteIma {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #e39950), color-stop(20%, rgba(255, 255, 255, 0)));
-    background: linear-gradient(0deg, #e39950 20%, rgba(255, 255, 255, 0) 20%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f08f0d), color-stop(20%, rgba(255, 255, 255, 0)));
+    background: linear-gradient(0deg, #f08f0d 20%, rgba(255, 255, 255, 0) 20%);
     padding: 0px 1em;
   }
 }
@@ -2947,7 +2978,7 @@ input[type="submit"] {
 #blog .bandeja .postBlog .conteTxt {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  background-color: #e39950;
+  background-color: #f08f0d;
   color: #fff;
   padding: 0 10%;
   display: -webkit-box;
@@ -3044,8 +3075,8 @@ input[type="submit"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(97%, #e39950), to(#804800));
-  background: linear-gradient(0deg, #e39950 97%, #804800 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(97%, #f08f0d), to(#804800));
+  background: linear-gradient(0deg, #f08f0d 97%, #804800 100%);
   padding: clamp(1em, 5vw, 10em);
   margin-bottom: 5em;
 }
