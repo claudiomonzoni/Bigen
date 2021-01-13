@@ -2542,6 +2542,7 @@ input[type="submit"] {
   border-right: solid 2px #000;
   margin-right: 2em;
   text-align: center;
+  z-index: 9000;
 }
 
 #conte #respuestas .tintesLigas .tinte {
@@ -2626,6 +2627,7 @@ input[type="submit"] {
   overflow: hidden;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  padding-left: 1.8em;
 }
 
 #conte #respuestas .bandejaRes .muestrame {
