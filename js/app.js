@@ -177,10 +177,3 @@ if (document.URL.indexOf("bigen-polvo" && "") >= 0) {
   
 
 }
-
-
-
-
-
-
-

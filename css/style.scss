@@ -1453,7 +1453,7 @@ button {
     display: flex;
     justify-content: center;
     margin: 0.5em;
-    img{
+    img {
       width: 100%;
       height: auto;
     }
@@ -1576,7 +1576,6 @@ input[type="submit"] {
         padding: 1em;
         p {
           font-weight: bold;
-       
         }
       }
       @include cel {
@@ -1612,24 +1611,23 @@ input[type="submit"] {
         font-weight: bold;
         padding: 0 0 0.5em 1.2em;
         position: relative;
-        &:before{
+        &:before {
           content: "";
           width: 20px;
           height: 20px;
-          background:url(../img/resuelve/btn_abajo.jpg) no-repeat;
+          background: url(../img/resuelve/btn_abajo.jpg) no-repeat;
           background-size: cover;
           position: absolute;
           top: 11px;
           left: 0px;
         }
       }
-      .h4Arriba{
-        &:before{
+      .h4Arriba {
+        &:before {
           content: "";
-          background:url(../img/resuelve/btn_arriba.jpg) no-repeat!important;
-          background-size: cover!important;
+          background: url(../img/resuelve/btn_arriba.jpg) no-repeat !important;
+          background-size: cover !important;
         }
-
       }
       p {
         margin-bottom: 0em;
@@ -1791,6 +1789,197 @@ input[type="submit"] {
     grid-column: 2;
     p {
       padding: 1em 0;
+    }
+  }
+}
+
+// Blog
+
+#blog {
+  background-image: url(../img/blog_fondo_modelo.jpg),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 70%,
+      rgba(210, 221, 114, 1) 100%
+    );
+  background-repeat: no-repeat, repeat-x;
+  background-position: right top, bottom;
+  background-size: 30%, 100%;
+  @include cel {
+    background-size: 50%;
+    background-position: right 8%;
+  }
+
+  #elconteBlog {
+    @extend .elconte;
+  }
+  .encabezado {
+    grid-column: 2;
+    text-align: center;
+    padding: 2em 10%;
+    img {
+      max-width: 300px;
+      @include cel {
+        max-width: 200px;
+      }
+    }
+  }
+  .bandeja {
+    grid-column: 2;
+
+    .postBlog {
+      display: flex;
+      margin: 2em 0;
+      @include cel {
+        flex-direction: column;
+      }
+
+      .conteIma {
+        flex-basis: 50%;
+        padding: 2em 0;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 80%,
+          $naranja 80%
+        );
+        @include cel {
+          background: linear-gradient(
+            0deg,
+            $naranja 20%,
+            rgba(255, 255, 255, 0) 20%
+          );
+          padding: 0px 1em;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+
+      .conteTxt {
+        flex-basis: 50%;
+        background-color: $naranja;
+        color: #fff;
+        padding: 0 10%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        @include cel {
+          padding: 10%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+        }
+        h3 {
+          font-size: 1.5em;
+        }
+        p {
+          padding-bottom: 0.5em;
+        }
+      }
+    }
+
+    .postBlog:nth-child(2n + 2) {
+      .conteIma {
+        background: linear-gradient(
+          90deg,
+          $verdeOscuro 20%,
+          rgba(255, 255, 255, 0) 20%
+        );
+        order: 2;
+        @include cel {
+          order: 0;
+          background: linear-gradient(
+            0deg,
+            $verdeOscuro 20%,
+            rgba(255, 255, 255, 0) 20%
+          );
+        }
+      }
+
+      .conteTxt {
+        background-color: $verdeOscuro;
+      }
+    }
+  }
+  #paginasBlog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      list-style: none;
+      background-color: #000;
+      margin: 2em 0.2em;
+      a {
+        padding: 0.5em;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#single {
+  background: linear-gradient(0deg, $verde 0%, #fff 10%);
+  #singleHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(0deg, $naranja 97%, rgb(128, 72, 0) 100%);
+
+    padding: clamp(1em, 5vw, 10em);
+    margin-bottom: 5em;
+    .conteHeader {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        all: initial;
+        font-size: clamp(2em, 4vw, 5em);
+        font-family: "Bebas Neue", cursive;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+      img {
+        max-width: 150px;
+        padding-bottom: 0.5em;
+      }
+    }
+  }
+  .bandeja {
+    @extend .elconte;
+
+    #cuerpoSingle {
+      grid-column: 2;
+      h2 {
+        padding: 0 1.3em;
+      }
+      p {
+        padding: 0 2em 2em;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2em;
+      }
+    }
+    .masentradas {
+      grid-column: 2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 3em 0;
+      .botones{
+        text-align: center;
+        flex-basis: 50%;
+        margin-bottom:3em;
+      }
     }
   }
 }
