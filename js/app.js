@@ -102,17 +102,16 @@ pregunta.forEach(item=>{
     // const alturaP = p.clientHeight
     // console.log(alturaP)
     // p.style.height=alturaP
-    p.classList.add('muestrame')
+    p.classList.toggle('muestrame')
     e.target.classList.add('h4Arriba')
-    console.log(e.target)
+
   })
 
 })
 
 const cerrarPregunta = ()=>{
   pregunta.forEach(pregunta =>{
-  //  pregunta.querySelector("p").style.height = "0"
-   pregunta.querySelector("p").classList.remove('muestrame')
+  // pregunta.querySelector("p").classList.remove('muestrame')
    pregunta.querySelector('h4').classList.remove('h4Arriba')
   })
 }

@@ -350,7 +350,7 @@ button {
 
 @media (max-width: 479px) {
   #mainNav .mainLogo {
-    padding-left: 0.6em;
+    padding: 0.7em;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }

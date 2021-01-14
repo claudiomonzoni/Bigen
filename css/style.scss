@@ -308,6 +308,7 @@ button {
       padding: 0.1em 1em;
     }
   }
+
   .mainLogo {
     flex: 1 1 20%;
     display: flex;
@@ -320,7 +321,7 @@ button {
       height: auto;
     }
     @include cel {
-      padding-left: 0.6em;
+      padding: 0.7em;
       align-self: flex-start;
     }
   }
