@@ -257,6 +257,11 @@ button {
           animation: menuAbierto 1.2s ease forwards;
 }
 
+.menuFullAbierto .anchor, .menuFullAbierto .social {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 .desanimaMenu {
   animation: menuCerrado 1s ease forwards reverse;
 }
@@ -305,6 +310,10 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.30s ease;
+    transition: all 0.30s ease;
     padding: 2em 0;
   }
 }
@@ -471,8 +480,8 @@ button {
   .submenu .cerrarCel {
     display: block;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
     font-size: 1.2em;
     font-weight: bold;
   }
@@ -629,11 +638,11 @@ button {
 
 @media (max-width: 479px) {
   #mainNav {
-    overflow-y: hidden;
+    overflow: hidden;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    height: 5em;
+    height: 5.3em;
   }
   #mainNav .anchor {
     -ms-grid-column-align: center;
@@ -853,6 +862,12 @@ button {
 
 #recuadros #cuadros .tres .conte {
   width: 50%;
+}
+
+@media (max-width: 479px) {
+  #recuadros #cuadros .tres .conte p {
+    text-align: center;
+  }
 }
 
 #recuadros #cuadros .tres .conte span {

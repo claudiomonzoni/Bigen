@@ -267,6 +267,10 @@ button {
 
 .menuFullAbierto {
   animation: menuAbierto 1.2s ease forwards;
+  .anchor, .social{
+    visibility: visible!important;
+    opacity: 1!important;
+  }
 }
 
 .desanimaMenu {
@@ -294,7 +298,10 @@ button {
     @include cel {
       flex-direction: column;
       text-align: center;
-      //ul margenes en cel
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.30s ease;
+      // -webkit-transition: opacity 0.2s ease;
       padding: 2em 0;
     }
     li {
@@ -395,8 +402,8 @@ button {
     .cerrarCel {
       display: block;
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 30px;
+      right: 30px;
       font-size: 1.2em;
       font-weight: bold;
     }
@@ -497,9 +504,9 @@ button {
 // ajustes cel solo menu principal
 @include cel {
   #mainNav {
-    overflow-y: hidden;
+    overflow: hidden;
     justify-content: start;
-    height: 5em;
+    height: 5.3em;
     .anchor {
       justify-self: center;
       li {
@@ -655,6 +662,11 @@ button {
     }
     .tres .conte {
       width: 50%;
+      @include cel {
+        p {
+          text-align: center;
+        }
+      }
       span {
         font-size: 0.8em;
       }
