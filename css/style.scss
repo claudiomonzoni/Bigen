@@ -1341,6 +1341,9 @@ button {
   }
 
   @include fondo("../img/bp/bigen_polvo_fondo_modelo2.jpg", 60%, 80%);
+  @include cel{
+    @include fondo("../img/bp/bigen_polvo_fondo_modelo2.jpg",100%, 32%);
+  }
 }
 
 #aplicacionSpeedy {
@@ -1362,6 +1365,9 @@ button {
   }
 
   @include fondo("../img/bsc/bigen-speedy-color-fondo-modelo2.jpg", 60%, 50%);
+  @include cel{
+    @include fondo("../img/bsc/bigen-speedy-color-fondo-modelo2.jpg", 130%, 28%);
+  }
 }
 
 #aplicacionBeard {
@@ -1583,6 +1589,9 @@ input[type="submit"] {
     url(../img/resuelve/resuelve_fondo_modelo2.jpg) no-repeat;
   background-size: 40%, 40%;
   background-position: right top, left bottom;
+  @include cel{
+    background-size: 40%, 70%;
+  }
   #respuestas {
     @extend .elconte;
     grid-column: 2;
